@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My company</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header bl" id="header">
+
+		<div class="logo"><span>MyCompany</span></div>
+		<div class="btn not-active" id="btn">
+			<span></span>
+			<span></span>
+			<span></span>
+			<nav id="nav2">
+				<a class="scr" href="#HOME">HOME</a>
+				<a class="scr" href="#ABOUT">ABOUT</a>
+				<a class="scr" href="#SERVICES">SERVICES</a>
+				<a class="scr" href="#PORTFOLIO">PORTFOLIO</a>
+				<a class="scr" href="#TESTIMONIALS">TESTIMONIALS</a>
+				<a class="scr" href="#CONTACT">CONTACT</a>
+			</nav>
+		</div>
+		<nav id="nav" class="nav">
+			
+			<a class="scr" href="#HOME">HOME</a>
+			<a class="scr" href="#ABOUT">ABOUT</a>
+			<a class="scr" href="#SERVICES">SERVICES</a>
+			<a class="scr" href="#PORTFOLIO">PORTFOLIO</a>
+			<a class="scr" href="#TESTIMONIALS">TESTIMONIALS</a>
+			<a class="scr" href="#CONTACT">CONTACT</a>
+			
+		</nav>
+		
+
+	</header> 
+
+	<section class="bk home" id="HOME">
+		<div class="Home_wr">
+			<h2>Welcome on <span>MYCOMPANY</span></h2>
+			<p>We are a digital agency with <strong>years of experience</strong> and with <strong>extraordinary people</strong></p>
+		</div>
+	</section>
+	<section class="wh about" id="ABOUT">
+		<div class="main_about">
+			<img src="images/mac.jpg" class="mac" alt="mac">
+			<div class="Somewords">
+				<h2>SOME WORDS <strong>ABOUT US</strong></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus .</p>
+				<ul>
+					<li>Mission - <span>We deliver uniqueness and quality</span></li>
+					<li>Skills - <span>Delivering fast and excellent results</span></li>
+					<li>Clients - <span>Satisfied clients thanks to our experience</span></li>
+				</ul>
+			</div>
+		</div>
+	</section> 
+	<section class="bk team" id="TEAM">
+		<div class="title tteam">
+			<span>OUR TEAM</span>
+		</div>
+		<div class="main_team">
+			<div class="card mySlides fade">
+				<div class="img"></div>
+				<h3>Vlad Ivanov</h3>
+				<h4>Designer</h4>
+				<p>Do not seek to change what has come before. Seek to create that which has not.</p>
+			</div>
+			<div class="card mySlides fade">
+				<div class="img"></div>
+				<h3>Bogdan Makarov</h3>
+				<h4>Manager</h4>
+				<p>Do not seek to change what has come before. Seek to create that which has not.</p>
+			</div>
+			<div class="card mySlides fade">
+				<div class="img"></div>
+				<h3>Pavel Konov</h3>
+				<h4>Copywriter</h4>
+				<p>Do not seek to change what has come before. Seek to create that which has not.</p>
+			</div>
+			<div class="card mySlides fade">
+				<div class="img"></div>
+				<h3>Max Belov</h3>
+				<h4>SEO</h4>
+				<p>Do not seek to change what has come before. Seek to create that which has not.</p>
+			</div>
+		</div>
+		<a class="prev imgbtn" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next imgbtn" onclick="plusSlides(1)">&#10095;</a>
+		<div class="dots" style="text-align:center">
+			<span class="dot" id="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			<span class="dot" onclick="currentSlide(4)"></span> 
+		</div>				
+	</section>
+	<section class="wh services" id="SERVICES">
+		<div class="title sservices">
+			<span>OUR SERVICES</span>
+		</div>
+		<div class="main_services">
+			<p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</p>
+			<div class="services_img">
+				<div class="card">
+					<img src="images/web.png" alt="web design">
+					<h3>WEB DESIGN</h3>
+					<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</div>
+				<div class="card">
+					<img src="images/apps.png" alt="mobile apps">
+					<h3>MOBILE APPS</h3>
+					<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</div>
+				<div class="card">
+					<img src="images/photography.png" alt="photography">
+					<h3>PHOTOGRAPHY</h3>
+					<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</div>
+				<div class="card">
+					<img src="images/marketing.png" alt="marketing">
+					<h3>MARKETING</h3>
+					<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</div>					
+			</div>
+		</div>
+	</section>
+	<section class="bk clients">
+		<div class="title cclients">
+			<span>SOME OF <strong>OUR CLIENTS</strong></span>
+		</div>
+		<div class="labels">
+			<img src="labels/chanel.png" alt="chanel label">
+			<img src="labels/zara.png" alt="zara label">
+			<img src="labels/gueralin.png" alt="gueralin label">
+			<img src="labels/lancome.png" alt="lancome label">
+			<img src="labels/lacoste.png" alt="lacoste label">
+		</div>
+	</section>
+	<section class="wh portfolio" id="PORTFOLIO">
+		<div class="title pportfolio">
+			<span>TAKE A LOOK AT <strong>OUR WORK</strong></span>
+		</div>
+		<div class="work">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</p>
+			<div class="imgs">
+				<div class="line" >
+					<img src="images/man.png"  alt="man">
+					<img class="d2"  src="images/man.png" alt="man">
+					<img class="disap" src="images/man.png" alt="man">
+					<img class="disap" src="images/man.png" alt="man">	
+				</div>
+				<div class="line">
+					<img src="images/bones.png" alt="bones">
+					<img class="d2" src="images/bones.png" alt="bones">
+					<img class="disap" src="images/bones.png" alt="bones">
+					<img class="disap" src="images/bones.png" alt="bones">
+				</div>
+				<div class="line">
+					<img src="images/nexus.png" alt="smartphone">
+					<img class="d2" src="images/nexus.png" alt="smartphone">
+					<img class="disap" src="images/nexus.png" alt="smartphone">
+					<img class="disap" src="images/nexus.png" alt="smartphone">
+				</div>
+							
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bk testimonials" id="TESTIMONIALS">
+	<div class="title ttestimonials">
+		<span><strong>OUR CLIENTS`</strong> TESTIMONIALS</span>
+	</div>
+	<div class="main_testimonials">
+		<p>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+		<span><strong>Dean Martin,</strong> CEO Acme Inc.</span>
+	</div>
+	
+</section>
+<section class="wh contact" id="CONTACT">
+	<div class="title ccontact">
+		<span>CONTACT US</span>
+	</div>
+	<div class="main_contact">
+		
+		<form>
+			<div class="wrapper n">
+				<label class="required">Name</label>
+				<input required type="text" name="firstname">
+			</div>
+			
+			<div class="wrapper n">
+				<label class="required">Email adress</label>
+				<input required type="text" name="emailadress">
+			</div>
+			<div class="wrapper m">
+				<label class="required">Message</label>
+				<textarea required name="message"></textarea>
+			</div>
+			<input class="sub" type="submit" value="SEND">
+		</form>
+	</div>
+</section>
+<footer>
+	<a href="https://www.facebook.com"><img src="images/facebook.png" alt=" facebook icon"></a>
+	<a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+	<a href="https://www.google.com"><img  src="images/google.png" alt="google icon"></a>
+	<a href="https://www.linkedin.cn"><img src="images/linkedin.png" alt="linkedin icon"></a>
+	<a href="https://www.dribble.com"><img src="images/dribble.png" alt="dribble icon"></a>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script>
+
+	var prevScrollpos = window.pageYOffset;
+	function nav() {
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-146px";
+			}
+			prevScrollpos = currentScrollPos;}
+		}
+	
+	
+
+		
+
+	</script>
+	
+	<script>
+
+		var slideIndex = 1;
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		function showSlides(n) {
+			
+			if (n > slides.length) {slideIndex = 1}   
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+				}
+
+				function pruf() {
+					var slides = document.getElementsByClassName("mySlides");
+					if ($('#dot').is(':visible')) {
+						showSlides(slideIndex);
+					} else {
+						slides[0].style.display = "block";
+						slides[3].style.display = "block";
+						slides[2].style.display = "block";			  	
+						slides[1].style.display = "block";
+
+					}
+				}
+				setInterval(function(){
+					pruf()
+				}, 500);
+
+
+
+
+
+
+			
+			</script>
+		
+
+			<script>
+				var btn = $('.btn');
+				var b = document.getElementById('btn');
+				var n = document.getElementById('nav');
+
+				btn.on('click', function() {
+					$(this).toggleClass('active');
+					$(this).toggleClass('not-active');
+
+				});
+			</script>
+
+			<script>
+
+			</script>
+				</body>
+				</html>

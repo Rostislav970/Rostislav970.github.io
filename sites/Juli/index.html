@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>О жизни | Cтатьи</title>
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Comfortaa:300,400,500,600,700|Roboto:300i,400,400i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="burger.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	
+</head>
+<body>
+<img class="July_logo_big" id="home" src="logo.svg" alt="July_logo">
+<header id="header">
+<div class="topnav" id="myTopnav">
+   <div class="wr"> 
+      <a id="menu-toggle"  class="icon" onclick="myFunction()">
+        <div id="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+        <div id="cross">
+         <span></span>
+         <span></span>
+        </div>
+      </a>
+  </div>
+  <a href="#home" class="header_logo active">Блог о жизни</a>
+  <section id="disap" class="disap">
+    <a href="#posts">Статьи</a>
+    <a href="#contact">Контакты</a>
+    <a href="#about">Об авторе</a>
+  </section>
+</div>
+</header>
+<h1 class="paragraph">Cтатьи</h1>
+<section class="main">
+    <div class="post">
+      <img class="post_img" src="images/women.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/kid.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/misc.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/house.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/tree.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+
+    <div class="post">
+      <img class="post_img" src="images/women.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/kid.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/misc.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/house.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+    <div class="post">
+      <img class="post_img" src="images/tree.jpg">      
+      <h2 class="post_title">Интересная статья<h2>
+    </div>
+
+
+
+</section>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var y = document.getElementById("disap");
+  if (x.className === "topnav" ) {
+    x.className += " responsive";
+    y.className -= "disap";
+  } else if(x.className === "topnav scroll"){
+    x.className += " responsive";
+    y.className -= "disap";
+  } else if(x.className === "topnav responsive"){
+    x.className = "topnav";
+    y.className = "disap";
+  } else if(x.className === "topnav scroll responsive"){
+    x.className = "topnav scroll";
+    y.className = "disap";
+  } else {
+    x.className = "topnav scroll";
+    y.className = "disap";
+  }
+
+
+}
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$('#menu-toggle').click(function(){
+  $(this).toggleClass('open');
+})
+</script>
+<script>
+  var prevScrollpos = window.pageYOffset;
+  var x = document.getElementById("myTopnav");
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+ if ($(window).scrollTop() > 500){
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").style.top = "0";
+    } else if (x.className !== "topnav scroll responsive" && x.className !== "topnav responsive scroll" ) {
+      document.getElementById("header").style.top = "-60px";
+    } else {
+      document.getElementById("header").style.top = "0";
+    }
+
+    prevScrollpos = currentScrollPos;
+  }
+}
+</script>
+<script>
+$(window).scroll(function(){
+    if ($(window).scrollTop() > 250) {
+        $('.topnav').addClass('scroll');
+    }
+    else {
+        $('.topnav').removeClass('scroll')
+    }
+});
+</script>
+</body>
+</html>
