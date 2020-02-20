@@ -221,8 +221,8 @@ footer span {
 }
 .gal_card {
 	position: relative;
-	height: 320px;
-	width: 320px;
+	height: 220px;
+	width: 220px;
 	background-color: #F6BF38;
 	display: flex;
 	flex-direction: row;
