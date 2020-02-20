@@ -1,0 +1,50 @@
+body {
+	font-family: 'Concert One', cursive;
+	font-size: 24px;
+	color: whitesmoke;
+	text-align: center;
+}
+
+
+#section0 {
+	background-image: url('img/gora.jpg');
+	background-size: cover;
+  	-moz-background-size: cover;  /* Firefox 3.6 */
+  	background-position: center;  /* Internet Explorer 7/8 */
+}
+#section0 h1:before {
+	content: "...";
+	font-size: 90px;
+	position: absolute;
+	top: -1.4em;
+	right: calc(50% - 40px);
+
+}
+#section1 h1:after {
+	content: "";
+	width: 240px; height: 6px;
+	border-radius: 5px;
+	position: relative;
+	left: calc(50% - 120px);
+	top: 20px;
+	background-color: white;
+	display: block;
+
+}
+
+#section1 .slide {
+	position: relative;
+	top: 15%;
+}
+.section {
+	
+}
+#section0 h1 {
+	top: -25%;
+	position: relative;
+	font-size: 60px;
+}
+#section1 .fp-tableCell {
+
+	vertical-align: unset;
+}

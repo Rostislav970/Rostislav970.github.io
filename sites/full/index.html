@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<h1>Experiments</h1>
+			<p></p>
+		</div>
+		<div class="section" id="section1">
+			<h1>Last of my</h1>
+		    <div class="slide "><h2>First Ex</h2></div>
+		    <div class="slide active"><h2>Second Ex</h2></div>
+		    <div class="slide"><h2>Third Ex</h2></div>
+		    <div class="slide"><h2>Fourth Ex</h2></div>
+		</div>
+		<div class="section" id="section2"><h1>Just list</h1></div>
+		<div class="section" id="section3"><h1>You shoud work while sun is shining</h1></div>
+	</div>
+
+
+
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['rgb(1,1,1,0)', '#943a3a', '#A774B3', '#F6BF38', '#ccddff'],
+		menu: '#menu',
+	lockAnchors: false,
+	anchors:['firstPage', 'secondPage'],
+	navigation: false,
+	navigationPosition: 'left',
+	navigationTooltips: ['firstSlide', 'secondSlide'],
+	showActiveTooltip: false,
+	slidesNavigation: true,
+	slidesNavPosition: 'bottom',
+
+	//Scrolling
+	css3: true,
+	scrollingSpeed: 700,
+	autoScrolling: true,
+	fitToSection: true,
+	fitToSectionDelay: 1000,
+	scrollBar: false,
+	easing: 'easeInOutCubic',
+	easingcss3: 'ease',
+	loopBottom: false,
+	loopTop: false,
+	loopHorizontal: true,
+	continuousVertical: false,
+	continuousHorizontal: false,
+	scrollHorizontally: false,
+	interlockedSlides: false,
+	dragAndMove: true,
+	offsetSections: false,
+	resetSliders: false,
+	fadingEffect: false,
+	normalScrollElements: '#element1, .element2',
+	scrollOverflow: false,
+	scrollOverflowReset: false,
+	scrollOverflowOptions: null,
+	touchSensitivity: 15,
+	bigSectionsDestination: null,
+
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
+
+	//Design
+	controlArrows: true,
+	verticalCentered: true,
+	paddingTop: '3em',
+	paddingBottom: '10px',
+	fixedElements: '#header, .footer',
+	responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
+	parallax: true,
+	parallaxOptions: {type: 'reveal', percentage: 100, property: 'translate'},
+	cards: true,
+	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+	//Custom selectors
+	sectionSelector: '.section',
+	slideSelector: '.slide',
+
+	lazyLoading: true,
+
+	//events
+	onLeave: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){},
+	afterRender: function(){},
+	afterResize: function(width, height){},
+	afterReBuild: function(){},
+	afterResponsive: function(isResponsive){},
+	afterSlideLoad: function(section, origin, destination, direction){},
+	onSlideLeave: function(section, origin, destination, direction){}
+	});
+</script>
+</body>
+</html>
