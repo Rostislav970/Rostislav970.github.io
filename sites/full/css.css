@@ -34,10 +34,9 @@ body {
 
 #section1 .slide {
 	position: relative;
-	top: 15%;
+	/*top: 15%;*/
 }
 .section {
-	
 }
 #section0 h1 {
 	top: -25%;
