@@ -51,7 +51,7 @@ body {
 	height: 60px;
 	position: relative;
 	top: 5%;
-	background-color: rgba(120, 44, 172, 0.38);
+	background-color: rgba(120, 44, 172, 0.48);
 	padding: 60px 0;
 
 }
@@ -59,8 +59,8 @@ body {
 @media screen and (max-width: 500px){
 
 	body {font-size: 18px}
-	#section0 h1:before {font-size: 80px;}
-	#section0 h1 {font-size: 40px;}
+	#section0 h1:before {font-size: 70px;}
+	#section0 h1 {font-size: 36px;}
 	.gray {font-size: 18px; padding: 20px 0;}
 
 	
